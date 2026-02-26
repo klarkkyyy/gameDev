@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dhehlt66p7k7q"]
+
+[ext_resource type="Texture2D" uid="uid://dkate83v8huvk" path="res://assets/sprites/background_/2308-w026-n002-3729B-p1-3729.jpg" id="1_anprf"]
+
+[node name="Node2D" type="Node2D" unique_id=1114962507]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=851279044]
+z_index = 1
+position = Vector2(2382, 774.5)
+scale = Vector2(0.06875, 0.09636296)
+texture = ExtResource("1_anprf")

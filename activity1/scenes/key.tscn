@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://xh4b1ugvm4xl"]
+
+[ext_resource type="Script" uid="uid://c3juj7dspgs6u" path="res://scenes/key.gd" id="1_fttkb"]
+[ext_resource type="Texture2D" uid="uid://xa0f7tc5wswj" path="res://assets/sprites/objects_/key_.png" id="2_fttkb"]
+[ext_resource type="AudioStream" uid="uid://cmmj70vik7lw3" path="res://assets/sounds/sucess1.mp3" id="3_wy8tx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wy8tx"]
+atlas = ExtResource("2_fttkb")
+region = Rect2(0, 0, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_brs3p"]
+atlas = ExtResource("2_fttkb")
+region = Rect2(15, 0, 15, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcln5"]
+atlas = ExtResource("2_fttkb")
+region = Rect2(30, 0, 15, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b4qnb"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_wy8tx")
+}, {
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_brs3p")
+}, {
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_wy8tx")
+}, {
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_jcln5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6t41w"]
+size = Vector2(7, 13)
+
+[sub_resource type="Animation" id="Animation_brs3p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_jcln5"]
+resource_name = "pickupKey"
+length = 1.2666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b4qnb"]
+_data = {
+&"RESET": SubResource("Animation_brs3p"),
+&"pickupKey": SubResource("Animation_jcln5")
+}
+
+[node name="Keys" type="Area2D" unique_id=1406821387]
+collision_mask = 2
+script = ExtResource("1_fttkb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=140513776]
+sprite_frames = SubResource("SpriteFrames_b4qnb")
+autoplay = "default"
+frame_progress = 0.2848584
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1077739829]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_6t41w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1432553367]
+libraries/ = SubResource("AnimationLibrary_b4qnb")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1284079997]
+stream = ExtResource("3_wy8tx")
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

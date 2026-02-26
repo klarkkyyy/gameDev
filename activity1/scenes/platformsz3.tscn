@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://chiduoqo1uwe4"]
+
+[ext_resource type="Texture2D" uid="uid://ccwq7yhb1jkgy" path="res://assets/sprites/midground_/winter_.png" id="1_27fdl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlgqw"]
+size = Vector2(16, 10)
+
+[node name="Platform" type="AnimatableBody2D" unique_id=901364456]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1582190174]
+texture = ExtResource("1_27fdl")
+region_enabled = true
+region_rect = Rect2(128, 87, 16, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=420830078]
+shape = SubResource("RectangleShape2D_nlgqw")
+one_way_collision = true
