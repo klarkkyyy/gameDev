@@ -5,6 +5,6 @@ Week 1_Activity 1: Simple Scene with a moving node
 
 Week 2_Activity 1: Gameplay Mechanics
 "Added Assets such as background, objects, and interactable enemies + SFX"
-https://github.com/user-attachments/assets/5d253a61-83ac-4855-b515-0d83d280741c
-
+<img width="1916" height="1073" alt="image" src="https://github.com/user-attachments/assets/41f42c6a-f487-410a-964f-ea4fb7322d9a" />
+<video src="https://github.com/user-attachments/assets/5d253a61-83ac-4855-b515-0d83d280741c" width="600"></video>
 
