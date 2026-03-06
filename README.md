@@ -17,6 +17,16 @@
 <img width="1916" height="1073" alt="image" src="https://github.com/user-attachments/assets/41f42c6a-f487-410a-964f-ea4fb7322d9a" />
 
 <video src="https://github.com/user-attachments/assets/5d253a61-83ac-4855-b515-0d83d280741c" width="600"></video>
+
+<h2 align = "center">Activity 2 Level Design </h2>
+
+- "	Added Week 2 : Activity 2 Level Design & Others"
+
+- <img width="1916" height="1073" alt="Screenshot 2026-03-07 050406" src="https://github.com/user-attachments/assets/82d637a6-11e3-4d66-a939-b2b372d4f484" />
+
+<video src="https://github.com/user-attachments/assets/845ef6d8-903d-458f-80c1-0fc45c20b90a" width="600"></video>
+
+
 ============================================================================================
 
 ============================================================================================
