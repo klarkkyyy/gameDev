@@ -22,12 +22,20 @@
 
 - "	Added Week 2 : Activity 2 Level Design & Others"
 
-- <img width="1916" height="1073" alt="Screenshot 2026-03-07 050406" src="https://github.com/user-attachments/assets/82d637a6-11e3-4d66-a939-b2b372d4f484" />
+<img width="1916" height="1073" alt="Screenshot 2026-03-07 050406" src="https://github.com/user-attachments/assets/82d637a6-11e3-4d66-a939-b2b372d4f484" />
 
 <video src="https://github.com/user-attachments/assets/845ef6d8-903d-458f-80c1-0fc45c20b90a" width="600"></video>
 
 
 ============================================================================================
-
+<h1 align = "center"> Week 3 </h1>
 ============================================================================================
+<h2 align = "center"> Activity1 UI/UX & Audio </h2>
 
+- "Added Week 3: Activity1 UI/UX & Audio such as World bgm, HUD UI for Coin & Key Tracking
+- To Add: Menu System, Toggle On/Off Show Deaths, Coins Collected
+  
+<img width="1916" height="1073" alt="Screenshot 2026-03-07 050406" src="https://github.com/user-attachments/assets/82d637a6-11e3-4d66-a939-b2b372d4f484" />
+
+
+ 
