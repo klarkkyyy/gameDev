@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cjsvqmbimx82q"]
+
+[ext_resource type="Texture2D" uid="uid://wnhjgsu7j21e" path="res://assets/sprites/objects_/coin_.png" id="1_pnwko"]
+
+[node name="Coin" type="Control" unique_id=1948882062]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1576147708]
+position = Vector2(43.999996, 43.999996)
+scale = Vector2(5.5, 5.5)
+texture = ExtResource("1_pnwko")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)

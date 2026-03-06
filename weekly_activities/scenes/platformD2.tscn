@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://p2ghiswtgu6j"]
+
+[ext_resource type="Texture2D" uid="uid://cxto7vhbysk0p" path="res://assets/sprites/midground_/desertDungeon_.png" id="1_jsq14"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7p1b"]
+size = Vector2(16, 10)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=827955949]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=97878684]
+texture = ExtResource("1_jsq14")
+region_enabled = true
+region_rect = Rect2(0, 32, 16, 11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=761667016]
+shape = SubResource("RectangleShape2D_f7p1b")
+one_way_collision = true

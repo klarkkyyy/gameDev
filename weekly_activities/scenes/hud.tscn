@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cqgrrb6v5npgl"]
+
+[ext_resource type="Texture2D" uid="uid://djw6pueninge8" path="res://assets/sprites/objects_/coin_ - Copy.png" id="1_ahhtf"]
+[ext_resource type="Texture2D" uid="uid://dsmk40otrdeu8" path="res://assets/sprites/objects_/items_.png" id="2_oo0fn"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1988291631]
+
+[node name="Control" type="Control" parent="." unique_id=312282797]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 31.999998
+offset_top = 27.999998
+offset_right = 31.999998
+offset_bottom = 27.999998
+scale = Vector2(3.5, 3.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1553423008]
+position = Vector2(4.1713943, 5.314277)
+scale = Vector2(1.65, 1.65)
+texture = ExtResource("1_ahhtf")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control" unique_id=489255662]
+position = Vector2(26.45711, 5.314279)
+scale = Vector2(1.65, 1.65)
+texture = ExtResource("1_ahhtf")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Control" unique_id=162343298]
+position = Vector2(48.571396, 5.4285636)
+scale = Vector2(1.65, 1.65)
+texture = ExtResource("1_ahhtf")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Control" unique_id=113545320]
+position = Vector2(306.85712, 5.1428585)
+scale = Vector2(1.65, 1.65)
+texture = ExtResource("2_oo0fn")
+region_enabled = true
+region_rect = Rect2(48, 32, 16, 16)

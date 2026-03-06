@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bxpru7jtbk5g1"]
+
+[ext_resource type="Texture2D" uid="uid://b34wlyk5jp4j0" path="res://assets/sprites/characters_/robinHood_ v1.0/robinHood_ v1.0/arrow_.png" id="1_q8ifc"]
+[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/killzone.tscn" id="2_23jat"]
+[ext_resource type="Texture2D" uid="uid://bn4d5fbhka0oi" path="res://assets/sprites/characters_/robinHood_ v1.0/robinHood_ v1.0/arrowFlip_.png" id="2_q8ifc"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_23jat"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8ifc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_q8ifc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_q8ifc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ckq1"]
+size = Vector2(14, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8ifc"]
+size = Vector2(14, 2.5)
+
+[node name="Arrow" type="AnimatableBody2D" unique_id=424831928]
+physics_material_override = SubResource("PhysicsMaterial_23jat")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=315044586]
+rotation = -1.5708345
+sprite_frames = SubResource("SpriteFrames_q8ifc")
+autoplay = "default"
+frame_progress = 0.07253343
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1367465017]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_7ckq1")
+
+[node name="Killzone" parent="." unique_id=875339799 instance=ExtResource("2_23jat")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1863605488]
+position = Vector2(0, 0.75)
+shape = SubResource("RectangleShape2D_q8ifc")

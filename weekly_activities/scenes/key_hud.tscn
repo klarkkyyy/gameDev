@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cq3ffn4pfkeh5"]
+
+[ext_resource type="Texture2D" uid="uid://xa0f7tc5wswj" path="res://assets/sprites/objects_/key_.png" id="1_0pkqm"]
+
+[node name="Key" type="Control" unique_id=14780100]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=875003486]
+position = Vector2(36, 39)
+scale = Vector2(5.5, 5.5)
+texture = ExtResource("1_0pkqm")
+region_enabled = true
+region_rect = Rect2(1, 1, 13, 14)

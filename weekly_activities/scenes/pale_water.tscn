@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dd2o6nenogq0m"]
+
+[ext_resource type="Texture2D" uid="uid://3gvjumj6h5qa" path="res://assets/sprites/foreground_/foreground_.png" id="1_eyhm7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlfje"]
+atlas = ExtResource("1_eyhm7")
+region = Rect2(0, 64, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjvwg"]
+atlas = ExtResource("1_eyhm7")
+region = Rect2(32, 64, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gyhj"]
+atlas = ExtResource("1_eyhm7")
+region = Rect2(64, 64, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_raeo1"]
+atlas = ExtResource("1_eyhm7")
+region = Rect2(96, 64, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x048j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlfje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjvwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gyhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_raeo1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.5
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=419939619]
+z_index = 6
+sprite_frames = SubResource("SpriteFrames_x048j")
+autoplay = "default"
+frame_progress = 0.17195417
