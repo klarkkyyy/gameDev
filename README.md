@@ -30,12 +30,13 @@
 ============================================================================================
 <h1 align = "center"> Week 3 </h1>
 ============================================================================================
-<h2 align = "center"> Activity1 UI/UX & Audio </h2>
+<h2 align = "center"> Activity 1 UI/UX & Audio </h2>
 
 - "Added Week 3: Activity1 UI/UX & Audio such as World bgm, HUD UI for Coin & Key Tracking
 - To Add: Menu System, Toggle On/Off Show Deaths, Coins Collected
-  
+
 <img width="1916" height="1073" alt="Screenshot 2026-03-07 050406" src="https://github.com/user-attachments/assets/82d637a6-11e3-4d66-a939-b2b372d4f484" />
 
+<h2 align = "center"> Activity 2 AI & Enemies </h2>
 <video src="https://github.com/user-attachments/assets/a4d1e3c9-e98b-444a-bcd6-90de5522592e" width="600"></video>
 
