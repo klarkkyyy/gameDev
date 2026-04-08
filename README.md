@@ -38,5 +38,8 @@
 <img width="1916" height="1073" alt="Screenshot 2026-03-07 050406" src="https://github.com/user-attachments/assets/82d637a6-11e3-4d66-a939-b2b372d4f484" />
 
 <h2 align = "center"> Activity 2 AI & Enemies </h2>
+
+- "Added Week 3 : Activity 2 AI Feature"
+
 <video src="https://github.com/user-attachments/assets/a4d1e3c9-e98b-444a-bcd6-90de5522592e" width="600"></video>
 
