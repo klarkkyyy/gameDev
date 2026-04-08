@@ -44,7 +44,26 @@ func _ready():
 	await get_tree().create_timer(5.0).timeout
 	show_next_tip()
 	
+var is_invincible: bool = false
+var _blink_tween: Tween = null
 
+func start_invincibility(duration: float = 2.0):
+	is_invincible = true
+	_start_blink()
+	await get_tree().create_timer(duration).timeout
+	is_invincible = false
+	if _blink_tween:
+		_blink_tween.kill()
+	animated_sprite_2d.modulate.a = 1.0
+
+func _start_blink():
+	if _blink_tween:
+		_blink_tween.kill()
+	_blink_tween = create_tween()
+	_blink_tween.set_loops()  # infinite loops, we kill it manually
+	_blink_tween.tween_property(animated_sprite_2d, "modulate:a", 0.2, 0.15)
+	_blink_tween.tween_property(animated_sprite_2d, "modulate:a", 1.0, 0.15)
+	
 func show_next_tip():
 	show_tip(tips[game_state.tip_indx][game_state.tip_indx2], 6.5)
 	game_state.tip_indx2 += 1
@@ -76,23 +95,20 @@ func fade_out_tip():
 	show_next_tip()
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
 	if Input.is_action_just_pressed(" jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	
 	var direction := Input.get_axis("move_left", "move_right")
 	if direction > 0:
 		animated_sprite_2d.flip_h = false
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
 		
-	# Play animations
+	
 	if is_on_floor():
 		if direction == 0:
 			animated_sprite_2d.play("idle")

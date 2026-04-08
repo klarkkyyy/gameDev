@@ -2489,9 +2489,9 @@ position = Vector2(-376, -16)
 position = Vector2(0, -5)
 zoom = Vector2(4, 4)
 limit_left = -510
-limit_top = -172
+limit_top = -171
 limit_right = 276
-limit_bottom = 87
+limit_bottom = 88
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 1.5
@@ -2520,7 +2520,6 @@ autowrap_mode = 2
 position = Vector2(-104, 67)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1621335242]
-light_mask = 2
 shape = SubResource("WorldBoundaryShape2D_v8uj3")
 
 [node name="Spikes" parent="." unique_id=1751648830 instance=ExtResource("12_pc3at")]
@@ -2818,7 +2817,7 @@ rotation = 1.5717713
 position = Vector2(-288, -41)
 
 [node name="AnimatableBody2D2" parent="." unique_id=1967477973 instance=ExtResource("15_45kkt")]
-position = Vector2(-313, -74)
+position = Vector2(-312, -86)
 
 [node name="AnimatableBody2D3" parent="." unique_id=402470653 instance=ExtResource("15_45kkt")]
 position = Vector2(-263, -76)
@@ -2827,7 +2826,7 @@ position = Vector2(-263, -76)
 position = Vector2(-279, -109)
 
 [node name="AnimatableBody2D5" parent="." unique_id=363343325 instance=ExtResource("15_45kkt")]
-position = Vector2(-195, -27)
+position = Vector2(-199, -27)
 
 [node name="AnimatableBody2D6" parent="." unique_id=1905899590 instance=ExtResource("15_45kkt")]
 position = Vector2(-52, -74)
@@ -2836,19 +2835,19 @@ position = Vector2(-52, -74)
 position = Vector2(-167, -58)
 
 [node name="AnimatableBody2D8" parent="." unique_id=1039721531 instance=ExtResource("14_73m23")]
-position = Vector2(29, -40)
+position = Vector2(18, -36)
 
 [node name="AnimatableBody2D10" parent="." unique_id=1312135063 instance=ExtResource("14_73m23")]
-position = Vector2(71, -26)
+position = Vector2(52, -2)
 
 [node name="AnimatableBody2D11" parent="." unique_id=1449760470 instance=ExtResource("15_45kkt")]
-position = Vector2(111, -18)
+position = Vector2(105, -28)
 
 [node name="AnimatableBody2D12" parent="." unique_id=1574319922 instance=ExtResource("15_45kkt")]
-position = Vector2(111, -52)
+position = Vector2(105, -63)
 
 [node name="AnimatableBody2D13" parent="." unique_id=438325418 instance=ExtResource("14_73m23")]
-position = Vector2(142, -76)
+position = Vector2(146, -84)
 
 [node name="Coin" parent="." unique_id=1406821387 instance=ExtResource("16_taw0e")]
 position = Vector2(-279, -120)
@@ -2860,7 +2859,7 @@ position = Vector2(-134, 26)
 position = Vector2(233, -73)
 
 [node name="AnimatableBody2D14" parent="." unique_id=1129134652 instance=ExtResource("15_45kkt")]
-position = Vector2(159, -106)
+position = Vector2(168, -119)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1943086395]
 
@@ -2910,13 +2909,13 @@ position = Vector2(-112, -36)
 position = Vector2(-419, -31)
 
 [node name="Bee2" parent="." unique_id=1900921332 instance=ExtResource("24_vwfin")]
-position = Vector2(-179, -106)
+position = Vector2(-168, -51)
 
 [node name="Bee3" parent="." unique_id=766512131 instance=ExtResource("24_vwfin")]
 position = Vector2(-56, 7)
 
 [node name="Bee4" parent="." unique_id=1310081667 instance=ExtResource("24_vwfin")]
-position = Vector2(125, -23)
+position = Vector2(126, -3)
 
 [node name="Bee5" parent="." unique_id=1787587536 instance=ExtResource("24_vwfin")]
 position = Vector2(180, -70)
@@ -2935,33 +2934,3 @@ position = Vector2(320, 56)
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=350638774 groups=["spawn_point"]]
 position = Vector2(-376, -21)
-
-[node name="AnimatableBody2D9" parent="." unique_id=1448115492 instance=ExtResource("15_45kkt")]
-position = Vector2(-343, -90)
-
-[node name="AnimatableBody2D16" parent="." unique_id=1297506361 instance=ExtResource("15_45kkt")]
-position = Vector2(222, -101)
-
-[node name="AnimatableBody2D17" parent="." unique_id=841222317 instance=ExtResource("15_45kkt")]
-position = Vector2(193, -123)
-
-[node name="Bee6" parent="." unique_id=1469845915 instance=ExtResource("24_vwfin")]
-position = Vector2(-232, -9)
-
-[node name="Bee7" parent="." unique_id=728709934 instance=ExtResource("24_vwfin")]
-position = Vector2(-73, -117)
-
-[node name="Bee8" parent="." unique_id=1537137684 instance=ExtResource("24_vwfin")]
-position = Vector2(-319, -99)
-
-[node name="Bee9" parent="." unique_id=296456711 instance=ExtResource("24_vwfin")]
-position = Vector2(33, -98)
-
-[node name="Bee10" parent="." unique_id=136598298 instance=ExtResource("24_vwfin")]
-position = Vector2(31, 11)
-
-[node name="AnimatableBody2D15" parent="." unique_id=218430335 instance=ExtResource("15_45kkt")]
-position = Vector2(63, 9)
-
-[node name="AnimatableBody2D18" parent="." unique_id=389020322 instance=ExtResource("15_45kkt")]
-position = Vector2(2, -9)

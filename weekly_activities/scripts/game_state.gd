@@ -14,6 +14,11 @@ func _ready() -> void:
 	deaths = 0
 	key = 0
 
+func reset_run():
+	point = 0
+	key = 0
+	hud.reset_hud()
+
 func add_coin():
 	point += 1
 	if point == 1:

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://rggu0yvyil43"]
 
+[ext_resource type="Script" uid="uid://cvkxoasn3mwov" path="res://scripts/bee.gd" id="1_ogg2i"]
 [ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/killzone.tscn" id="1_vie5o"]
 [ext_resource type="Texture2D" uid="uid://dg3xyee761pk0" path="res://assets/sprites/enemies_/Bee/Bee.png" id="2_ogg2i"]
 
@@ -426,7 +427,11 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Bee" type="Node2D" unique_id=1897328272]
+[sub_resource type="CircleShape2D" id="CircleShape2D_vie5o"]
+radius = 45.0
+
+[node name="Bee" type="Area2D" unique_id=1469845915 groups=["bee"]]
+script = ExtResource("1_ogg2i")
 
 [node name="Killzone" parent="." unique_id=875339799 instance=ExtResource("1_vie5o")]
 
@@ -436,7 +441,14 @@ shape = SubResource("RectangleShape2D_vie5o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1343432260]
 sprite_frames = SubResource("SpriteFrames_fxtel")
-animation = &"idle"
+animation = &"chill_ready"
 autoplay = "idle"
-frame = 9
-frame_progress = 0.55697227
+
+[node name="DetectionZone" type="Area2D" parent="." unique_id=1250345857]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionZone" unique_id=208673159]
+shape = SubResource("CircleShape2D_vie5o")
+
+[connection signal="body_entered" from="DetectionZone" to="." method="_on_detection_zone_body_entered"]
+[connection signal="body_exited" from="DetectionZone" to="." method="_on_detection_zone_body_exited"]

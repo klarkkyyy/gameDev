@@ -38,6 +38,14 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="Medina_Game-dev"
 
+[global_group]
+
+player=""
+spawn_point=""
+coin=""
+key=""
+bee=""
+
 [gui]
 
 theme/default_font_multichannel_signed_distance_field=true

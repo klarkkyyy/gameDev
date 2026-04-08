@@ -2833,17 +2833,6 @@ autoplay = &"airborn2"
 z_index = 1
 position = Vector2(-185, -3)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=49852712]
-position = Vector2(0, -5)
-zoom = Vector2(4, 4)
-limit_left = -185
-limit_top = -286
-limit_right = 184
-limit_bottom = 126
-limit_smoothed = true
-position_smoothing_enabled = true
-position_smoothing_speed = 1.5
-
 [node name="Label" type="Label" parent="Player" unique_id=1050133941]
 anchors_preset = 14
 anchor_top = 0.5
@@ -2863,6 +2852,17 @@ text = "TESTING
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=49852712]
+position = Vector2(0, -5)
+zoom = Vector2(4, 4)
+limit_left = -184
+limit_top = -286
+limit_right = 185
+limit_bottom = 126
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 1.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=516632091]
 
@@ -2905,3 +2905,6 @@ layout_mode = 2
 unique_name_in_owner = true
 position = Vector2(83, -15.999998)
 scale = Vector2(0.905, 0.905)
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=970850902 groups=["spawn_point"]]
+position = Vector2(-185, -8)

@@ -124,7 +124,7 @@ _data = {
 &"pickupKey": SubResource("Animation_jcln5")
 }
 
-[node name="Keys" type="Area2D" unique_id=1406821387]
+[node name="Keys" type="Area2D" unique_id=1406821387 groups=["key"]]
 collision_mask = 2
 script = ExtResource("1_fttkb")
 

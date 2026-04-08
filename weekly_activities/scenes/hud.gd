@@ -16,6 +16,14 @@ func _ready():
 	coin_3.hide()
 	key.hide()
 
+func reset_hud():
+	coin.hide()
+	coin_2.hide()
+	coin_3.hide()
+	key.hide()
+	h_box_container.hide()
+	v_box_container.hide()
+
 func show_coin1():
 	if not h_box_container.visible:
 		h_box_container.show()

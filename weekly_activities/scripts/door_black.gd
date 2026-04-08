@@ -7,7 +7,6 @@ extends Area2D
 var door_opened = false
 var key_obtained = false
 var player_inside = false
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	game_state.door = self
 	close.show()
