@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dvix7yxyasa6f"]
+
+[ext_resource type="Script" uid="uid://x45cghhan3so" path="res://scripts/3D/camera_3d.gd" id="1_2iguy"]
+[ext_resource type="PackedScene" uid="uid://bohlorob2168u" path="res://scenes/3D/player_3D.tscn" id="1_5238e"]
+
+[sub_resource type="Environment" id="Environment_5qntq"]
+ambient_light_source = 2
+ambient_light_energy = 0.5
+
+[node name="Level2" type="Node3D" unique_id=2107011245]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1295553000 node_paths=PackedStringArray("target")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 64.20158, 171.69215)
+current = true
+script = ExtResource("1_2iguy")
+target = NodePath("../Player3d")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1442705487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, 0)
+use_collision = true
+size = Vector3(50, 10, 10)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1853027600]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=734789929]
+environment = SubResource("Environment_5qntq")
+
+[node name="Player3d" parent="." unique_id=1411162884 instance=ExtResource("1_5238e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -23.417706, 3.1510372)
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=828165868 groups=["spawn_point"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -76.14614, 0)

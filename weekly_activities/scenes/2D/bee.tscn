@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rggu0yvyil43"]
 
-[ext_resource type="Script" uid="uid://cvkxoasn3mwov" path="res://scripts/bee.gd" id="1_ogg2i"]
-[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/killzone.tscn" id="1_vie5o"]
+[ext_resource type="Script" uid="uid://cvkxoasn3mwov" path="res://scripts/2D/bee.gd" id="1_ogg2i"]
+[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/2D/killzone.tscn" id="1_vie5o"]
 [ext_resource type="Texture2D" uid="uid://dg3xyee761pk0" path="res://assets/sprites/enemies_/Bee/Bee.png" id="2_ogg2i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vie5o"]

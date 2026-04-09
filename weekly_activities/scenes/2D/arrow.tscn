@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bxpru7jtbk5g1"]
 
 [ext_resource type="Texture2D" uid="uid://b34wlyk5jp4j0" path="res://assets/sprites/characters_/robinHood_ v1.0/robinHood_ v1.0/arrow_.png" id="1_q8ifc"]
-[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/killzone.tscn" id="2_23jat"]
+[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/2D/killzone.tscn" id="2_23jat"]
 [ext_resource type="Texture2D" uid="uid://bn4d5fbhka0oi" path="res://assets/sprites/characters_/robinHood_ v1.0/robinHood_ v1.0/arrowFlip_.png" id="2_q8ifc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_23jat"]

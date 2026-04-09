@@ -1,31 +1,34 @@
-[gd_scene format=3 uid="uid://bfh2dnuwpt34c"]
+[gd_scene format=3 uid="uid://dxd4o3javup6u"]
 
-[ext_resource type="Script" uid="uid://cvs5cfb3yl7ae" path="res://scenes/enemy.gd" id="1_q84go"]
-[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/killzone.tscn" id="2_8wwer"]
-[ext_resource type="Texture2D" uid="uid://dqgydyx76eogq" path="res://assets/sprites/slime_purple.png" id="3_c6jgc"]
+[ext_resource type="Script" uid="uid://cvs5cfb3yl7ae" path="res://scenes/2D/enemy.gd" id="1_5uy6h"]
+[ext_resource type="Texture2D" uid="uid://cvxlgmveuihst" path="res://assets/sprites/slime_green.png" id="1_7p1mj"]
+[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/2D/killzone.tscn" id="2_md0e3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7p1mj"]
 size = Vector2(10, 15)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
-atlas = ExtResource("3_c6jgc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
+atlas = ExtResource("1_7p1mj")
 region = Rect2(0, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
-atlas = ExtResource("3_c6jgc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+atlas = ExtResource("1_7p1mj")
 region = Rect2(24, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
-atlas = ExtResource("3_c6jgc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+atlas = ExtResource("1_7p1mj")
 region = Rect2(48, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nenq2"]
-atlas = ExtResource("3_c6jgc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
+atlas = ExtResource("1_7p1mj")
 region = Rect2(72, 24, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xwavj"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ra3w")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5uy6h")
 }, {
@@ -34,9 +37,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xwavj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nenq2")
 }],
 "loop": true,
 "name": &"default",
@@ -45,9 +45,9 @@ animations = [{
 
 [node name="Enemy" type="Node2D" unique_id=324432120]
 position = Vector2(0, -6)
-script = ExtResource("1_q84go")
+script = ExtResource("1_5uy6h")
 
-[node name="Killzone" parent="." unique_id=875339799 instance=ExtResource("2_8wwer")]
+[node name="Killzone" parent="." unique_id=875339799 instance=ExtResource("2_md0e3")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=85809029]
 position = Vector2(0, -1.5)
@@ -63,5 +63,5 @@ target_position = Vector2(-9, 0)
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_xwavj")
 autoplay = "default"
-frame_progress = 0.36792162
+frame_progress = 0.9930774
 flip_h = true

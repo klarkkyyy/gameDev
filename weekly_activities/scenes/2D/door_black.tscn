@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cllgeqodfi4xl"]
 
-[ext_resource type="Script" uid="uid://bf6ln417qhmw1" path="res://scripts/door_black.gd" id="1_o5ivh"]
+[ext_resource type="Script" uid="uid://bf6ln417qhmw1" path="res://scripts/2D/door_black.gd" id="1_o5ivh"]
 [ext_resource type="Texture2D" uid="uid://bxi02g4rajf0k" path="res://assets/sprites/background_/dungeon_.png" id="2_kv4jf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7v1bw"]

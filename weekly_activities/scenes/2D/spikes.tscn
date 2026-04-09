@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chp5rm8ms2mph"]
 
-[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/killzone.tscn" id="1_xbcdo"]
+[ext_resource type="PackedScene" uid="uid://bf6wmu17vagvj" path="res://scenes/2D/killzone.tscn" id="1_xbcdo"]
 [ext_resource type="Texture2D" uid="uid://e3kaw3frjppq" path="res://assets/sprites/objects_/staticObjects_.png" id="2_bflj7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kd5gq"]
