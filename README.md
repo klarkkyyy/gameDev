@@ -43,3 +43,9 @@
 
 <video src="https://github.com/user-attachments/assets/a4d1e3c9-e98b-444a-bcd6-90de5522592e" width="600"></video>
 
+============================================================================================
+<h1 align = "center"> Week 4 </h1>
+============================================================================================
+<h2 align = "center"> Week 4 Activity 1 :3D Basics & Optimization </h2>
+- In progress
+<img width="1916" height="1016" alt="image" src="https://github.com/user-attachments/assets/f67d0874-9cf1-46ac-a86a-1d050bacaada" />
