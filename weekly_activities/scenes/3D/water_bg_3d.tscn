@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://dkakuppnanck8"]
+
+[ext_resource type="Texture2D" uid="uid://3gvjumj6h5qa" path="res://assets/sprites/foreground_/foreground_.png" id="1_qmiin"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmiin"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6i34"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83ukn"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4k4y1"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oraat"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(64, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqk4x"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(80, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xr5xe"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(96, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yau34"]
+atlas = ExtResource("1_qmiin")
+region = Rect2(112, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8wwew"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmiin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6i34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83ukn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4k4y1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oraat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqk4x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xr5xe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yau34")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="WaterBg3d" type="Area3D" unique_id=56856137]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1710409740]
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8wwew")
+autoplay = "default"
+frame = 5
+frame_progress = 0.8530475
+
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="." unique_id=1207140633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15863678, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8wwew")
+autoplay = "default"
+frame = 3
+frame_progress = 0.18586135
+
+[node name="AnimatedSprite3D3" type="AnimatedSprite3D" parent="." unique_id=1719818070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31767914, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8wwew")
+autoplay = "default"
+frame = 3
+frame_progress = 0.28216177
+
+[node name="AnimatedSprite3D4" type="AnimatedSprite3D" parent="." unique_id=718875844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4769425, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8wwew")
+autoplay = "default"
+frame = 3
+frame_progress = 0.011315555
+
+[node name="AnimatedSprite3D5" type="AnimatedSprite3D" parent="." unique_id=2079530583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.636, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8wwew")
+autoplay = "default"
+frame = 3
+frame_progress = 0.18586135
+
+[node name="AnimatedSprite3D6" type="AnimatedSprite3D" parent="." unique_id=1000133615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.795, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8wwew")
+autoplay = "default"
+frame = 3
+frame_progress = 0.18586135

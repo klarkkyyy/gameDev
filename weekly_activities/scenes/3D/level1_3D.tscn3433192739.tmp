@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://dvix7yxyasa6f"]
+
+[ext_resource type="Script" uid="uid://x45cghhan3so" path="res://scripts/3D/camera_3d.gd" id="1_4ojmc"]
+[ext_resource type="PackedScene" uid="uid://bohlorob2168u" path="res://scenes/3D/player_3D.tscn" id="2_0desb"]
+[ext_resource type="Texture2D" uid="uid://ccwq7yhb1jkgy" path="res://assets/sprites/midground_/winter_.png" id="2_ksxfn"]
+[ext_resource type="PackedScene" uid="uid://dkakuppnanck8" path="res://scenes/3D/water_bg_3d.tscn" id="3_ggdla"]
+[ext_resource type="PackedScene" uid="uid://c5ckelek5r4cl" path="res://scenes/3D/killzone_3d.tscn" id="3_ksxfn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0desb"]
+size = Vector3(0.98, 0.5, 30.525)
+
+[sub_resource type="Environment" id="Environment_5qntq"]
+ambient_light_source = 2
+ambient_light_energy = 0.5
+
+[node name="Level1" type="Node3D" unique_id=2107011245]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1295553000 node_paths=PackedStringArray("target")]
+transform = Transform3D(1, 0, 0, 0, 0.9802712, 0.19765735, 0, -0.19765735, 0.9802712, 1.1876621, 1.872302, 3.745)
+current = true
+script = ExtResource("1_4ojmc")
+target = NodePath("../Player3d")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=961723624]
+
+[node name="Sprite3D" type="Sprite3D" parent="Node3D" unique_id=688767639]
+transform = Transform3D(11.225, 0, 0, 0, 11.225, 0, 0, 0, 11.225, 0, 0, 0)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D3" type="Sprite3D" parent="Node3D" unique_id=1293432458]
+transform = Transform3D(-4.9066034e-07, 0, 11.225, 0, 11.225, 0, -11.225, 0, -4.9066034e-07, -1.223, 0, -1.229)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D5" type="Sprite3D" parent="Node3D" unique_id=681754077]
+transform = Transform3D(-4.9066034e-07, 0, 11.225, 0, 11.225, 0, -11.225, 0, -4.9066034e-07, 1.195, 0, -1.229)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D4" type="Sprite3D" parent="Node3D" unique_id=825211946]
+transform = Transform3D(-11.225, 0, -9.813207e-07, 0, 11.225, 0, 9.813207e-07, 0, -11.225, 0.005, 0, -2.419)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D2" type="Sprite3D" parent="Node3D" unique_id=1692503996]
+transform = Transform3D(45.89, 0, 0, 0, -2.0059156e-06, -45.89, 0, 45.89, -2.0059156e-06, 0, 0.58, -1.21)
+pixel_size = 0.0035
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(113, 280, 15, 15)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D" unique_id=1161722711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/StaticBody3D" unique_id=622369503]
+transform = Transform3D(2.405, 0, 0, 0, 2.405, 0, 0, 0, 2.405, 0.018, 0, -1.207)
+shape = SubResource("BoxShape3D_0desb")
+
+[node name="WaterBg3d" parent="Node3D" unique_id=56856137 instance=ExtResource("3_ggdla")]
+transform = Transform3D(6.72, 0, 0, 0, 6.72, 0, 0, 0, 6.72, -1.688, 0, 0.32)
+
+[node name="Node3D2" type="Node3D" parent="." unique_id=1882686411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.895, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="Node3D2" unique_id=686213556]
+transform = Transform3D(11.225, 0, 0, 0, 11.225, 0, 0, 0, 11.225, 0, 0, 0)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D3" type="Sprite3D" parent="Node3D2" unique_id=392842747]
+transform = Transform3D(-4.9066034e-07, 0, 11.225, 0, 11.225, 0, -11.225, 0, -4.9066034e-07, -1.223, 0, -1.229)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D5" type="Sprite3D" parent="Node3D2" unique_id=1772382415]
+transform = Transform3D(-4.9066034e-07, 0, 11.225, 0, 11.225, 0, -11.225, 0, -4.9066034e-07, 1.195, 0, -1.229)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D4" type="Sprite3D" parent="Node3D2" unique_id=69535155]
+transform = Transform3D(-11.225, 0, -9.813207e-07, 0, 11.225, 0, 9.813207e-07, 0, -11.225, 0.005, 0, -2.419)
+pixel_size = 0.007
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(48.985, 193, 30.66, 15)
+
+[node name="Sprite3D2" type="Sprite3D" parent="Node3D2" unique_id=2099545074]
+transform = Transform3D(45.89, 0, 0, 0, -2.0059156e-06, -45.89, 0, 45.89, -2.0059156e-06, 0, 0.58, -1.21)
+pixel_size = 0.0035
+texture = ExtResource("2_ksxfn")
+region_enabled = true
+region_rect = Rect2(113, 280, 15, 15)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D2" unique_id=1041603466]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D2/StaticBody3D" unique_id=2029800516]
+transform = Transform3D(2.405, 0, 0, 0, 2.405, 0, 0, 0, 2.405, 0.018, 0, -1.207)
+shape = SubResource("BoxShape3D_0desb")
+
+[node name="WaterBg3d" parent="Node3D2" unique_id=510110471 instance=ExtResource("3_ggdla")]
+transform = Transform3D(6.72, 0, 0, 0, 6.72, 0, 0, 0, 6.72, 1.832, 0, 0.305)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1853027600]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=734789929]
+environment = SubResource("Environment_5qntq")
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=828165868 groups=["spawn_point"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.123, 2.5, -1.147)
+
+[node name="Killzone3d" parent="." unique_id=1026504116 instance=ExtResource("3_ksxfn")]
+transform = Transform3D(52.905, 0, 0, 0, 52.905, 0, 0, 0, 52.905, 0.024412155, -0.39285845, 0)
+collision_mask = 2
+
+[node name="Player3d" parent="." unique_id=1411162884 instance=ExtResource("2_0desb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -1.237)

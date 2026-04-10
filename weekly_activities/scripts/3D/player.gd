@@ -1,11 +1,11 @@
 extends CharacterBody3D
 
 const SPEED = 5.0
-const JUMP_VELOCITY = 8.0
+const JUMP_VELOCITY = 16
 const font_size = 70
-const GRAVITY = 9.8
+const GRAVITY = 40
 
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var animated_sprite_3d: AnimatedSprite3D = $AnimatedSprite3D
 @onready var label: Label = $Label
 
 var is_invincible: bool = false
@@ -22,17 +22,17 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("move_left", "move_right")
 
 	if direction > 0:
-		animated_sprite_2d.flip_h = false
+		animated_sprite_3d.flip_h = false
 	elif direction < 0:
-		animated_sprite_2d.flip_h = true
+		animated_sprite_3d.flip_h = true
 
 	if is_on_floor():
 		if direction == 0:
-			animated_sprite_2d.play("idle")
+			animated_sprite_3d.play("idle")
 		else:
-			animated_sprite_2d.play("run")
+			animated_sprite_3d.play("run")
 	else:
-		animated_sprite_2d.play("jump")
+		animated_sprite_3d.play("jump")
 
 	if direction:
 		velocity.x = direction * SPEED
@@ -49,12 +49,12 @@ func start_invincibility(duration: float = 2.0):
 	is_invincible = false
 	if _blink_tween:
 		_blink_tween.kill()
-	animated_sprite_2d.modulate.a = 1.0
+	animated_sprite_3d.modulate.a = 1.0
 
 func _start_blink():
 	if _blink_tween:
 		_blink_tween.kill()
 	_blink_tween = create_tween()
 	_blink_tween.set_loops()
-	_blink_tween.tween_property(animated_sprite_2d, "modulate:a", 0.2, 0.15)
-	_blink_tween.tween_property(animated_sprite_2d, "modulate:a", 1.0, 0.15)
+	_blink_tween.tween_property(animated_sprite_3d, "modulate:a", 0.2, 0.15)
+	_blink_tween.tween_property(animated_sprite_3d, "modulate:a", 1.0, 0.15)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cmj3ce40m4q1e" path="res://scripts/3D/killzone_3d.gd" id="1_j7t61"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ko86w"]
-size = Vector3(200, 1, 1)
+size = Vector3(200, 1, 26.105)
 
 [node name="Killzone3d" type="Area3D" unique_id=1026504116]
 script = ExtResource("1_j7t61")
