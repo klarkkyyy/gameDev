@@ -49,3 +49,7 @@
 <h2 align = "center"> Week 4 Activity 1 :3D Basics & Optimization </h2>
 - In progress
 <img width="1916" height="1016" alt="image" src="https://github.com/user-attachments/assets/f67d0874-9cf1-46ac-a86a-1d050bacaada" />
+
+_ Updated
+<img width="1916" height="1016" alt="image" src="https://github.com/user-attachments/assets/d7431fd2-4ccf-48c7-bf9a-9b9913a6b320" />
+
